@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive nav bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+<nav class="navbar">
+    <div class="content">
+        <div class="logo">CodeWorld</div>
+        <ul class="menu-items">
+            <div class="close-btn">
+                <i class="fas fa-times"></i>
+            </div>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">feature</a></li>
+            <li><a href="#">feedback</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+    </nav>
+    <div class="banner"></div>
+    <div class="about">
+        <div class="title">responsive navigation bar</div>
+        <div class="details">
+            <div class="box">
+                <h3>placement</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, repellat quibusdam provident facere esse dolor?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus aliquam rerum provident dolor voluptas quidem perferendis, ducimus asperiores nostrum sint commodi, ut explicabo officia, adipisci veritatis suscipit inventore voluptates blanditiis.</p>
+                
+            </div>
+            <div class="box">
+                <h3>practicle project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, repellat quibusdam provident facere esse dolor?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus aliquam rerum provident dolor voluptas quidem perferendis, ducimus asperiores nostrum sint commodi, ut explicabo officia, adipisci veritatis suscipit inventore voluptates blanditiis.</p>
+                
+                
+            </div>
+            <div class="box">
+                <h3>career opportunity</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, repellat quibusdam provident facere esse dolor?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus aliquam rerum provident dolor voluptas quidem perferendis, ducimus asperiores nostrum sint commodi, ut explicabo officia, adipisci veritatis suscipit inventore voluptates blanditiis.</p>
+                
+            </div>
+        </div>      
+    </div>
+    <!-- footer section -->
+    <div class="footer">
+        <h5>connect with us</h5>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram-square"></i>
+        <i class="fa-brands fa-github"></i>
+        <div class="information">
+            <p>Lorem, ipsumum dicta consequatur explicabo beatae accusamus, officia voluptatum esse! Id autem deserunt asperiores nam expedita amet explicabo quod voluptas tenetur quasi quisquam voluptate, sapiente maiores hic. Numquam quibusdam laudantium eius architecto maxime aperiam libero nesciunt excepturi recusandae provident accusantium fuga minus laborum dolores autem deleniti inventore, veritatis doloribus quaerat reprehenderit dolore rerum assumenda. Deserunt reprehenderit fuga suscipit esse ullam tempore molestiae eaque cumque aspernatur asperiores officiis laboriosam nulla, maiores deleniti veritatis quis ex repudiandae eum maxime provident.</p>
+        </div>
+    </div>
+
+<script>
+    const menu = document.querySelector(".menu-items")
+    const openBar = document.querySelector(".menu-btn")
+    const closeBtn = document.querySelector(".close-btn")
+    openBar.onclick = () => {
+        menu.classList.add("active")
+
+    }
+    closeBtn.onclick = () => {
+        menu.classList.remove("active")
+    }
+</script>
+</body>
+</html>

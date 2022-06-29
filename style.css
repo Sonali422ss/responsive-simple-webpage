@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    font-family: "Lato",sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-transform:capitalize;
+    transition:all 1s ;
+}
+.navbar{
+    background: rgb(153, 71, 71);
+}
+.navbar .content {
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    width:100%;
+}
+.navbar .content .logo{
+    color: white;
+    font-size: 2rem;
+    margin-left: 15px; margin-top: 5px;
+    padding: 0 1rem;
+}
+.navbar .menu-items{
+    display: flex;
+    padding: 1rem;
+    max-width:200px;
+}
+.navbar .close-btn i {
+  display: none;
+}
+.navbar .menu-items li a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding: 1rem;
+    font-size: 1rem;
+    transition:all 0.1s;
+    
+}
+.navbar .menu-items li a:hover{
+    text-shadow: 1px 2px 8px white, 2px 2px 8px white, 2px 2px 20px white;
+}
+.navbar i{
+    cursor: pointer;
+}
+.navbar .menu-btn i{
+    color:white;
+    margin-right:30px; margin-top: 15px;
+    font-size:30px;
+    display:none;
+}
+
+
+.banner{
+    background: url("https://images.pexels.com/photos/735911/pexels-photo-735911.jpeg?cs=srgb&dl=pexels-soumil-kumar-735911.jpg&fm=jpg");
+    height:100vh;
+    background-size:cover;
+    background-attachment: fixed;
+}
+.about{
+    padding:20px;
+    text-align: center;
+}
+.about .title {
+    font-size: 2rem;
+    padding:2rem;
+}
+.about .details {
+    display:flex;
+    width: 100%;
+}
+.about .details .box {
+    cursor: pointer;
+    margin:10px;
+    width:300px;
+    height: auto;
+    border-radius: 1rem;
+    background:rgb(207, 207, 230);
+    transition: all 1s;
+}
+.about .details .box:hover{
+    transform: scale(0.9);
+}
+.about .details .box h3,
+.about .details .box p{
+    padding: 10px;
+}
+.footer{
+    background:rgb(241, 233, 233);
+    height: 300px;
+    text-align: center;
+}
+.footer h5 {
+    padding: 10px;
+    font-size:20px;
+}
+.footer i{
+    cursor: pointer;
+    padding:2rem;
+    color:black;
+}
+@media (max-width:800px) {
+    
+   .navbar .menu-items{
+    background: black;
+    left:-100%;
+    top:0;
+    position:fixed;
+    height:100vh;
+    display:block;
+    
+   }
+   .navbar .menu-items.active{
+    left:0;
+   }
+   .navbar .close-btn i {
+    display:block;
+    color:white;
+    margin-top:20px;
+    margin-left:15px;
+    font-size: 30px;
+  }
+   .navbar .menu-items li{
+    text-align: center;
+    padding: 1rem;
+    margin-top:1rem;
+   }
+   .navbar .menu-items li a{
+    font-size:20px;
+   }
+   .navbar .menu-btn i{
+    display: block;
+   }
+   .about .details {
+    display:block;
+    overflow:hidden;
+}
+    
+.about .details .box{
+    width:auto
+}
+}
